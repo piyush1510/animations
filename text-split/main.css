@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 31, 31);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+}
+.display-container{
+    margin-top: -20px;
+    position: relative;
+    font-size: 30px;
+    /* background-color: red; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
+.circle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 0px rgb(216, 19, 59);
+    transition: all 1s;
+}
+.up{
+    text-shadow: 0 0 5px white;
+    width:max-content;
+    color: white;
+    position: absolute;
+    top: -19px;
+    height: 38px;
+    overflow: hidden;
+    z-index: 10;
+}
+.down-container{
+    position: absolute;
+    width:313px;
+    height: 40px;
+    overflow: hidden;
+    /* display: none; */
+    top: 19px;
+    z-index: 10;
+}
+.down{
+    text-shadow: 0 0 5px white;
+    color: white;
+    position: absolute;
+    top: -38px;
+    width:max-content;
+}
+.hidden{
+    width: max-content;
+    position: absolute;
+    top: -4px;
+    opacity: 0;
+    font-size: 40px !important;
+    color: crimson;
+    z-index: 9;
+    text-shadow: 0 0 3px crimson;
+}
+.play{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    
+
+}
+.revert{
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    padding: 10px;
+
+}
+.btn{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(145, 14, 40);
+}
